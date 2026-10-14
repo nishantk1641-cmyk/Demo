@@ -1,0 +1,29 @@
+3D DEVELOPMENT: LANGUAGES AND TECHNOLOGIES
+
+PROGRAMMING LANGUAGES
+- HTML5: page structure and content.
+- CSS3: layout, styling, transforms and perspective effects.
+- JavaScript: interaction, animation and browser 3D logic.
+- TypeScript: typed JavaScript for larger projects.
+- GLSL: vertex and fragment shaders for GPU rendering.
+- Python: Blender scripting, automation and pipelines.
+- C++: performance-heavy graphics software and engines.
+- C#: Unity game and 3D application development.
+- Java: Android and some 3D application development.
+- Rust: systems-level and performance-focused graphics projects.
+
+3D / WEB TECHNOLOGIES (NOT PROGRAMMING LANGUAGES)
+- Three.js: 3D graphics library for the browser.
+- React Three Fiber: React renderer for Three.js.
+- Babylon.js: browser 3D engine.
+- WebGL: browser graphics API.
+- WebGPU: newer browser GPU API.
+- GSAP: animation library.
+- Blender: 3D modelling, materials, lighting and rendering.
+- React: UI library.
+- Next.js: React framework.
+- Node.js: JavaScript runtime often used for backend services.
+
+RECOMMENDED STACK FOR A PREMIUM 3D CLOTHING STORE
+HTML + CSS + JavaScript + Three.js + GSAP + Blender.
+For a larger application, add React / Next.js and TypeScript.

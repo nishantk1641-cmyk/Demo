@@ -1,0 +1,28 @@
+8-WEEK BEGINNER ROADMAP
+
+Week 1: HTML
+Build a simple page with headings, images, links and sections.
+
+Week 2: CSS
+Learn responsive layouts, typography, shadows, transforms and perspective.
+
+Week 3: JavaScript
+Learn variables, functions, events, arrays and DOM interaction.
+
+Week 4: Three.js
+Create a scene, camera, renderer, lights, materials and a rotating 3D object.
+
+Week 5: Blender
+Learn basic modelling, materials, lighting and exporting GLB/GLTF models.
+
+Week 6: GSAP
+Animate page sections, scroll effects and 3D object movement.
+
+Week 7: React
+Build reusable components and learn React Three Fiber basics.
+
+Week 8: Project
+Build a small 3D product showcase with a mobile-friendly layout.
+
+TIP:
+Do not try to learn every language at once. Start with HTML, CSS, JavaScript and Three.js.

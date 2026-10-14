@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2ec">
+  <meta name="description" content="READYMADE WALA — family wear clothing store in Sharda Road, Brahmpuri, Meerut. Explore everyday and occasion wear for the whole family.">
+  <title>READYMADE WALA | Family Wear, Meerut</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f5f2ec;
+      --ink: #171715;
+      --muted: #77736c;
+      --line: #d9d4ca;
+      --white: #fffefa;
+      --accent: #a33b2e;
+      --shadow: 0 18px 45px rgba(25, 22, 18, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+    .topline { padding: 10px 5vw; background: var(--ink); color: #f8f5ef; text-align: center; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+    header { padding: 22px 5vw; display: flex; align-items: center; justify-content: space-between; gap: 22px; border-bottom: 1px solid var(--line); }
+    .wordmark { font-family: "Playfair Display", serif; font-size: clamp(25px, 3vw, 34px); font-weight: 700; letter-spacing: -.04em; }
+    nav { display: flex; align-items: center; gap: 28px; font-size: 13px; font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 19px; background: var(--ink); color: white; border: 1px solid var(--ink); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; transition: .2s ease; cursor: pointer; }
+    .nav-cta:hover, .button:hover { background: var(--accent); border-color: var(--accent); }
+    .hero { padding: 42px 5vw 70px; display: grid; grid-template-columns: .92fr 1.08fr; gap: 5vw; align-items: center; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-family: "Playfair Display", serif; font-size: clamp(48px, 7vw, 92px); line-height: .98; letter-spacing: -.055em; font-weight: 600; margin: 22px 0; }
+    .hero-copy { max-width: 470px; color: var(--muted); line-height: 1.8; font-size: 15px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button.light { color: var(--ink); background: transparent; }
+    .button.light:hover { color: white; }
+    .hero-photo { position: relative; min-height: 560px; overflow: hidden; background: #d8d0c4; box-shadow: var(--shadow); }
+    .hero-photo img { width: 100%; height: 100%; min-height: 560px; object-fit: cover; display: block; }
+    .photo-caption { position: absolute; bottom: 22px; left: 22px; color: white; font-family: "Playfair Display", serif; font-size: 23px; text-shadow: 0 2px 12px #0008; }
+    .trust-row { display: flex; gap: 26px; flex-wrap: wrap; margin-top: 38px; padding-top: 23px; border-top: 1px solid var(--line); }
+    .trust-item strong { display: block; font-family: "Playfair Display", serif; font-size: 25px; }
+    .trust-item span { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    section { padding: 78px 5vw; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 30px; }
+    h2 { font-family: "Playfair Display", serif; font-size: clamp(36px, 5vw, 58px); line-height: 1.05; letter-spacing: -.04em; margin: 12px 0 0; font-weight: 600; }
+    .section-note { max-width: 360px; color: var(--muted); line-height: 1.7; font-size: 13px; }
+    .collections { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .collection { min-width: 0; }
+    .collection img { width: 100%; height: 390px; object-fit: cover; display: block; background: #ddd; transition: transform .5s ease; }
+    .collection { overflow: hidden; }
+    .collection:hover img { transform: scale(1.035); }
+    .collection h3 { font-family: "Playfair Display", serif; font-size: 25px; margin: 17px 0 5px; }
+    .collection p { color: var(--muted); font-size: 12px; margin: 0; }
+    .dark-band { background: var(--ink); color: var(--paper); display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: center; }
+    .dark-band p { color: #c4beb3; line-height: 1.8; max-width: 480px; }
+    .dark-band img { width: 100%; height: 430px; object-fit: cover; display: block; }
+    .dark-band .eyebrow { color: #d5a59b; }
+    .dark-band .button { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; }
+    .visit-details { border-top: 1px solid var(--line); }
+    .detail-row { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .detail-row span:first-child { color: var(--muted); }
+    .detail-row strong { text-align: right; }
+    .visit-photo { width: 100%; height: 350px; object-fit: cover; display: block; }
+    .review { padding: 35px; background: #e9e4da; }
+    .stars { letter-spacing: .15em; color: var(--accent); }
+    .review blockquote { font-family: "Playfair Display", serif; font-size: clamp(25px, 3vw, 38px); line-height: 1.2; margin: 18px 0; }
+    .review small { color: var(--muted); }
+    footer { background: #e9e4da; padding: 35px 5vw; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 12px; color: var(--muted); }
+    .footer-brand { color: var(--ink); font-family: "Playfair Display", serif; font-size: 24px; }
+    .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 5; padding: 15px 19px; color: white; background: #176b43; font-size: 12px; font-weight: 700; box-shadow: 0 8px 25px #0003; }
+    .inquiry { background: var(--white); max-width: 760px; padding: 30px; box-shadow: var(--shadow); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+    label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 7px; }
+    input, select { width: 100%; padding: 13px; border: 1px solid var(--line); background: white; color: var(--ink); outline: none; }
+    input:focus, select:focus { border-color: var(--accent); }
+    .fineprint { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 13px 0 0; }
+    @media (max-width: 800px) {
+      header { flex-wrap: wrap; }
+      nav { order: 3; width: 100%; justify-content: space-between; gap: 12px; overflow-x: auto; }
+      .hero, .dark-band, .visit-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 35px; }
+      .hero-photo, .hero-photo img { min-height: 420px; }
+      .collections { grid-template-columns: 1fr 1fr; }
+      .collection img { height: 290px; }
+      .dark-band img { height: 320px; }
+    }
+    @media (max-width: 520px) {
+      .topline { font-size: 9px; }
+      .collections { grid-template-columns: 1fr; }
+      .collection img { height: 390px; }
+      section { padding: 58px 5vw; }
+      .section-head { display: block; }
+      .section-note { margin-top: 15px; }
+      .form-grid { grid-template-columns: 1fr; }
+      footer { align-items: flex-start; flex-direction: column; }
+      .wa-float { right: 12px; bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">Family fashion • Sharda Road, Meerut • Visit us today</div>
+  <header>
+    <a class="wordmark" href="#home">READYMADE WALA</a>
+    <nav aria-label="Main navigation">
+      <a href="#collections">Collections</a>
+      <a href="#story">Our store</a>
+      <a href="#visit">Visit</a>
+      <a href="#enquiry">Enquire</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/917417626844?text=Hello%20READYMADE%20WALA%2C%20I%27d%20like%20to%20know%20about%20your%20collection." target="_blank" rel="noopener">WhatsApp us</a>
+  </header>
+
+  <main id="home">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">A family wear clothing store</div>
+        <h1>Good style.<br>For every<br>generation.</h1>
+        <p class="hero-copy">Discover clothing for the moments that bring everyone together. Drop by READYMADE WALA on Sharda Road, Brahmpuri, Meerut, and explore the collection in store.</p>
+        <div class="hero-actions">
+          <a class="button" href="#collections">Explore collection</a>
+          <a class="button light" href="https://www.google.com/maps/search/?api=1&query=READYMADE%20WALA%2C%20Sharda%20Road%2C%20Brahmpuri%2C%20Meerut%20250002" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item"><strong>4.8 ★</strong><span>Google rating</span></div>
+          <div class="trust-item"><strong>391</strong><span>Customer reviews</span></div>
+          <div class="trust-item"><strong>Meerut</strong><span>Local family store</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85" alt="People browsing a clothing collection">
+        <div class="photo-caption">Find your family's next favourite.</div>
+      </div>
+    </div>
+
+    <section id="collections">
+      <div class="section-head">
+        <div><div class="eyebrow">Made for every day</div><h2>Explore the<br>collection.</h2></div>
+        <p class="section-note">A preview of the styles and inspiration we love. For current stock, sizes and prices, message the store directly on WhatsApp.</p>
+      </div>
+      <div class="collections">
+        <article class="collection">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Contemporary everyday fashion">
+          <h3>Everyday favourites</h3><p>Easy styles for daily wear.</p>
+        </article>
+        <article class="collection">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85" alt="Fashion styling inspiration" onerror="this.src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85'">
+          <h3>Occasion looks</h3><p>Styles for celebrations and gatherings.</p>
+        </article>
+        <article class="collection">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85" alt="Modern fashion portrait">
+          <h3>New-season style</h3><p>Fresh looks for the whole family.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-band" id="story">
+      <div>
+        <div class="eyebrow">Your neighbourhood clothing store</div>
+        <h2>Come in.<br>Take your time.</h2>
+        <p>Choosing clothes should feel simple and enjoyable. Visit READYMADE WALA, browse in person, and ask our team about available styles, sizes and new arrivals.</p>
+        <a class="button" href="https://wa.me/917417626844?text=Hello%20READYMADE%20WALA%2C%20please%20share%20your%20latest%20arrivals." target="_blank" rel="noopener">Ask about new arrivals</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85" alt="Clothing store interior">
+    </section>
+
+    <section id="visit">
+      <div class="section-head">
+        <div><div class="eyebrow">Find us in Meerut</div><h2>Visit the store.</h2></div>
+        <p class="section-note">We'd be happy to help you find something for yourself or the family. Contact us before visiting to confirm store timings.</p>
+      </div>
+      <div class="visit-grid">
+        <div>
+          <img class="visit-photo" src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=85" alt="Local retail shopping street">
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+            <a class="button" href="https://www.google.com/maps/search/?api=1&query=READYMADE%20WALA%2C%20Sharda%20Road%2C%20Brahmpuri%2C%20Meerut%20250002" target="_blank" rel="noopener">Open in Maps</a>
+            <a class="button light" href="tel:+917417626844">Call store</a>
+          </div>
+        </div>
+        <div class="visit-details">
+          <div class="detail-row"><span>Store</span><strong>READYMADE WALA</strong></div>
+          <div class="detail-row"><span>Address</span><strong>Sharda Road, Brahmpuri,<br>Meerut, Uttar Pradesh 250002</strong></div>
+          <div class="detail-row"><span>Phone / WhatsApp</span><strong>+91 74176 26844</strong></div>
+          <div class="detail-row"><span>Google rating</span><strong>4.8 ★ · 391 reviews</strong></div>
+          <div class="detail-row"><span>Business type</span><strong>Family wear clothing store</strong></div>
+          <p class="fineprint">Rating and review count are shown from the business information supplied for this website draft. Confirm they are still current before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry">
+      <div class="section-head">
+        <div><div class="eyebrow">A quick WhatsApp enquiry</div><h2>What are you<br>looking for?</h2></div>
+        <p class="section-note">Send your enquiry directly to the store. This opens WhatsApp with a ready-to-send message; you choose whether to send it.</p>
+      </div>
+      <div class="inquiry">
+        <form id="whatsappForm">
+          <div class="form-grid">
+            <div><label for="customerName">Your name</label><input id="customerName" name="customerName" placeholder="Enter your name" required></div>
+            <div><label for="category">Shopping for</label><select id="category" name="category"><option>Family wear</option><option>Men's wear</option><option>Women's wear</option><option>Kids' wear</option><option>New arrivals</option><option>Other</option></select></div>
+            <div><label for="size">Size (optional)</label><input id="size" name="size" placeholder="e.g. M, L, 32"></div>
+            <div><label for="message">What would you like to know?</label><input id="message" name="message" placeholder="e.g. Available colours and price"></div>
+          </div>
+          <button class="button" type="submit">Continue to WhatsApp →</button>
+          <p class="fineprint">No message is sent automatically. WhatsApp opens so you can review and send the enquiry yourself.</p>
+        </form>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <blockquote>“A local favourite for family clothing.”</blockquote>
+        <small>READYMADE WALA · 4.8 Google rating · 391 reviews (business details supplied)</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><div class="footer-brand">READYMADE WALA</div><div>Family wear clothing store · Meerut</div></div>
+    <div>Sharda Road, Brahmpuri, Meerut 250002</div>
+    <div>© <span id="year"></span> READYMADE WALA</div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917417626844?text=Hello%20READYMADE%20WALA%2C%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat with READYMADE WALA on WhatsApp">WhatsApp ↗</a>
+
+  <script>
+    const STORE_NUMBER = "917417626844"; // Country code + number, no + or spaces.
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("whatsappForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const name = document.getElementById("customerName").value.trim();
+      const category = document.getElementById("category").value;
+      const size = document.getElementById("size").value.trim() || "Not specified";
+      const message = document.getElementById("message").value.trim() || "Please share available options and prices.";
+      const text = [
+        "Hello READYMADE WALA!",
+        "My name is " + name + ".",
+        "I'm enquiring about: " + category + ".",
+        "Size: " + size + ".",
+        "Enquiry: " + message
+      ].join("\\n");
+      window.open("https://wa.me/" + STORE_NUMBER + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>

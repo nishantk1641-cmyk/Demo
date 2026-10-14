@@ -1,45 +1,24 @@
-3D WEB DEVELOPMENT STARTER KIT
+READYMADE WALA — Website starter
 
-This ZIP contains:
-1. A beginner-friendly guide to languages used in 3D development.
-2. A learning roadmap.
-3. A simple Three.js starter website.
-4. A list of useful tools and official documentation.
+FILES
+- index.html: responsive single-page website with photo-led layout, 3D depth via restrained image shadows, and WhatsApp enquiry form.
 
-IMPORTANT:
-- HTML, CSS and JavaScript are the core starting point for 3D websites.
-- Three.js is a JavaScript library, not a programming language.
-- Blender is a 3D creation application, not a programming language.
-- GLSL is used to write GPU shaders.
-- Python and C++ are useful for 3D tools, automation and high-performance applications.
-- C# is commonly used with Unity.
+WHATSAPP ENQUIRY FLOW
+1. Visitor fills in the enquiry form.
+2. The website builds a message containing their name, category, size and question.
+3. WhatsApp opens with the message pre-filled.
+4. Visitor reviews and taps Send.
 
-HOW TO RUN THE STARTER:
-1. Extract this ZIP.
-2. Open the 'starter' folder in a code editor.
-3. Run it using a local development server (for example, VS Code Live Server).
-4. Internet access is needed to load Three.js from its CDN.
+This is click-to-chat, not unattended message automation. It does not send messages by itself.
 
-For a real production project, install Three.js through npm and use a build tool such as Vite.
+FOR REAL AUTOMATION
+Use the official WhatsApp Business Platform (Cloud API) through a trusted provider or direct Meta setup. A secure backend/webhook is required; never put access tokens in index.html. Get clear customer opt-in, use approved templates for business-initiated messages, and provide a way to stop messages. Examples: order updates, customer-requested stock alerts, and replies to incoming enquiries. Do not bulk-message people who have not opted in.
 
-LEARNING ORDER:
-1. HTML
-2. CSS
-3. JavaScript
-4. Three.js
-5. Blender
-6. GSAP
-7. React
-8. React Three Fiber
-9. GLSL
-10. WebGL / WebGPU
+BEFORE PUBLISHING
+- Confirm the phone number, address, rating and review count with the business owner.
+- Replace sample fashion/store photos with the store's own approved product and interior photos.
+- Add real collection names, product photos, prices and timings only after the owner confirms them.
+- Upload index.html to GitHub Pages, Netlify or another static host.
+- For production, use image files owned/licensed by the business rather than relying on third-party sample image URLs.
 
-OFFICIAL LEARNING LINKS:
-HTML/CSS/JavaScript: https://developer.mozilla.org/
-Three.js: https://threejs.org/docs/
-Blender: https://docs.blender.org/
-GSAP: https://gsap.com/docs/
-React: https://react.dev/
-Babylon.js: https://doc.babylonjs.com/
-WebGL: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
-WebGPU: https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
+The design uses a warm off-white and black palette, editorial typography, no gradients, and no decorative logo mark.
